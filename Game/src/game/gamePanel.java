@@ -139,8 +139,10 @@ public class gamePanel extends javax.swing.JPanel {
                 }
                 int numberToApply = 0;
                 while (numberToApply == 0) {
-                    numberToApply = Double.valueOf(Math.random() * (totalNumber + 1)).intValue();
-                    System.out.println("t");
+                    numberToApply = Double.valueOf(Math.random() * (totalNumber * 0.2)).intValue();
+                    if (numberToApply == 0) {
+                        numberToApply = 1;
+                    }
                 }
                 numberToApply = numberToApply == 1 || numberToApply == 0 ? 1 : numberToApply - 1;
                 notBuild = false;

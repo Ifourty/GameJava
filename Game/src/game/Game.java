@@ -168,8 +168,7 @@ public class Game extends javax.swing.JFrame {
     }// GEN-LAST:event_newGamejMenuItemActionPerformed
 
     private void newGameJButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_newGameJButtonActionPerformed
-        game = new gamePanel(this, Integer.valueOf(valueJSpinner.getValue().toString()).intValue() > 50 ? 50
-                : Integer.valueOf(valueJSpinner.getValue().toString()).intValue());
+        game = new gamePanel(this, Integer.valueOf(valueJSpinner.getValue().toString()).intValue());
         game.setSize(getWidth(), getHeight());
         remove(mainMenuJPanel);
         game.initGame();
